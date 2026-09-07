@@ -62,13 +62,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onPlanProductionClick }) => {
             </nav>
 
             {/* Right Action Section */}
-            <div className="hidden lg:flex items-center gap-3 xl:gap-6 shrink-0">
-              {/* Broadcast Live Status Indicator */}
-              <div className="hidden xl:flex items-center gap-2 px-3 py-1 rounded bg-zinc-900/80 border border-zinc-800/90 text-[10px] font-mono tracking-wider text-zinc-400 shrink-0 whitespace-nowrap">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#0066FF] tally-live-pulse shrink-0" />
-                <span>UK BASE · GLOBAL DISPATCH</span>
-              </div>
-
+            <div className="hidden lg:flex items-center shrink-0">
               {/* Primary CTA */}
               <button
                 onClick={onPlanProductionClick}
