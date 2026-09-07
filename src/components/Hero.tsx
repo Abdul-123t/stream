@@ -8,7 +8,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onPlanProductionClick }) => {
   return (
-    <section className="relative min-h-screen pt-28 pb-16 lg:pt-36 lg:pb-24 flex flex-col justify-between bg-[#070709] overflow-hidden">
+    <section className="relative min-h-hero pt-28 pb-16 lg:pt-36 lg:pb-24 flex flex-col justify-between bg-[#070709] overflow-hidden">
       {/* Cinematic Broadcast Studio High-Visibility Background */}
       <div className="absolute inset-0 pointer-events-none z-0">
         <img
@@ -44,12 +44,8 @@ export const Hero: React.FC<HeroProps> = ({ onPlanProductionClick }) => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="space-y-1"
             >
-              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl font-black font-display uppercase tracking-tight text-white leading-[0.95] break-words">
-                LIVE EVENTS.
-              </h1>
-              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-7xl xl:text-8xl font-black font-display uppercase tracking-tight text-[#0066FF] leading-[0.95] break-words hyphens-auto">
-                BUILT FOR BROADCAST.
-              </h1>
+              <h1 className="heading-primary">LIVE EVENTS.</h1>
+              <h1 className="heading-secondary">BUILT FOR BROADCAST.</h1>
             </motion.div>
 
             {/* Supporting Copy */}

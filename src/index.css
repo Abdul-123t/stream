@@ -73,3 +73,14 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #0066FF;
 }
+/* stylelint-disable */
+@layer utilities {
+  /* stylelint-disable-next-line */
+  .site-container { @apply max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8; }
+  /* Heading utilities for responsive scaling */
+  .heading-primary { @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black uppercase tracking-tight text-white; font-family: var(--font-display); }
+  .heading-secondary { @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold uppercase tracking-tight text-[#0066FF]; font-family: var(--font-display); }
+  /* Hero height utility to avoid address-bar jitter */
+  .min-h-hero { @apply min-h-[calc(100vh-64px)]; }
+}
+/* stylelint-enable */

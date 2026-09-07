@@ -22,72 +22,36 @@ export default function App() {
   const [selectedTierForEnquiry, setSelectedTierForEnquiry] = useState<string | undefined>(undefined);
 
   const scrollToEnquiry = (tier?: string) => {
-    if (tier) {
-      setSelectedTierForEnquiry(tier);
-    }
+    if (tier) setSelectedTierForEnquiry(tier);
     const element = document.getElementById('enquiry');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    if (element) element.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <div className="min-h-screen bg-[#0A0A0B] text-[#F4F4F6] font-sans selection:bg-[#0066FF] selection:text-white">
-      {/* Fixed Desktop & Mobile Navigation Header */}
+    <div className="flex flex-col min-h-screen">
       <Navbar onPlanProductionClick={() => scrollToEnquiry()} />
 
-      {/* Main Content Sections */}
-      <main>
-        {/* 01. Hero */}
-        <Hero onPlanProductionClick={() => scrollToEnquiry()} />
-
-        {/* 02. Trust Strip */}
-        <TrustStrip />
-
-        {/* 03. Editorial Introduction & Big Idea */}
-        <Introduction />
-
-        {/* 04. Capabilities (8 Core Services) */}
-        <Capabilities onPlanProductionClick={() => scrollToEnquiry()} />
-
-        {/* 05. Production Process (01 to 05 Workflow) */}
-        <ProductionProcess />
-
-        {/* 06. Events Covered (11 Event Sectors) */}
-        <EventsCovered onPlanProductionClick={() => scrollToEnquiry()} />
-
-        {/* 07. Global Capability */}
-        <GlobalCapability />
-
-        {/* 08. Production Levels */}
-        <ProductionLevels onPlanProductionClick={(tier) => scrollToEnquiry(tier)} />
-
-        {/* 09. Why D1 Streams (4 Editorial Blocks) */}
-        <WhyD1Streams />
-
-        {/* 10. Technical Credibility (Broadcast Spec Sheet) */}
-        <TechnicalCredibility />
-
-        {/* 11. Production in Action (Cinematic Atmosphere) */}
-        <ProductionInAction />
-
-        {/* 12. Official YouTube & Broadcast Media Channel */}
-        <YouTubeShowcase />
-
-        {/* 13. Recent Production Work */}
-        <Testimonials />
-
-        {/* 13. FAQ Accordion (11 Questions) */}
-        <FAQSection />
-
-        {/* 14. Production Enquiry Briefing Form */}
-        <ProductionEnquirySection initialTier={selectedTierForEnquiry} />
-
-        {/* 15. Final CTA */}
-        <FinalCTA onPlanProductionClick={() => scrollToEnquiry()} />
+      <main className="flex-grow">
+        <div className="site-container">
+          <Hero onPlanProductionClick={() => scrollToEnquiry()} />
+          <TrustStrip />
+          <Introduction />
+          <Capabilities onPlanProductionClick={() => scrollToEnquiry()} />
+          <ProductionProcess />
+          <EventsCovered onPlanProductionClick={() => scrollToEnquiry()} />
+          <GlobalCapability />
+          <ProductionLevels onPlanProductionClick={(tier) => scrollToEnquiry(tier)} />
+          <WhyD1Streams />
+          <TechnicalCredibility />
+          <ProductionInAction />
+          <YouTubeShowcase />
+          <Testimonials />
+          <FAQSection />
+          <ProductionEnquirySection initialTier={selectedTierForEnquiry} />
+          <FinalCTA onPlanProductionClick={() => scrollToEnquiry()} />
+        </div>
       </main>
 
-      {/* 16. Footer */}
       <Footer />
     </div>
   );

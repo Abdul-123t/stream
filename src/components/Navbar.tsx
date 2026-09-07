@@ -11,19 +11,26 @@ export const Navbar: React.FC<NavbarProps> = ({ onPlanProductionClick }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  // Scroll state for header background
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 40) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 40);
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Lock body scroll when mobile menu is open to avoid layout shift
+  useEffect(() => {
+    const html = document.documentElement;
+    if (mobileMenuOpen) {
+      html.classList.add('overflow-hidden');
+    } else {
+      html.classList.remove('overflow-hidden');
+    }
+    // Cleanup on unmount
+    return () => html.classList.remove('overflow-hidden');
+  }, [mobileMenuOpen]);
   const navLinks = [
     { name: 'Capabilities', href: '#capabilities' },
     { name: 'Events', href: '#events' },
