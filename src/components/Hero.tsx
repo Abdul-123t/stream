@@ -98,10 +98,10 @@ export const Hero: React.FC<HeroProps> = ({ onPlanProductionClick }) => {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="space-y-1"
             >
-              <h1 className="text-4xl sm:text-6xl md:text-7xl xl:text-8xl font-black font-display uppercase tracking-tight text-white leading-[0.92]">
+              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-7xl font-black font-display uppercase tracking-tight text-white leading-[0.92] break-words">
                 LIVE EVENTS.
               </h1>
-              <h1 className="text-4xl sm:text-6xl md:text-7xl xl:text-8xl font-black font-display uppercase tracking-tight text-[#0066FF] leading-[0.92]">
+              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-7xl font-black font-display uppercase tracking-tight text-[#0066FF] leading-[0.92] break-words hyphens-auto">
                 BUILT FOR BROADCAST.
               </h1>
             </motion.div>
