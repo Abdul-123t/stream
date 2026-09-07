@@ -49,12 +49,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onPlanProductionClick }) => {
             </a>
 
             {/* Desktop Navigation Links */}
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden lg:flex items-center gap-4 xl:gap-8">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-xs font-mono uppercase tracking-[0.18em] text-zinc-300 hover:text-white transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-[#0066FF] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200"
+                  className="text-xs font-mono uppercase tracking-[0.18em] text-zinc-300 hover:text-white transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:right-0 after:h-[1px] after:bg-[#0066FF] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-200 shrink-0"
                 >
                   {link.name}
                 </a>
@@ -62,9 +62,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onPlanProductionClick }) => {
             </nav>
 
             {/* Right Action Section */}
-            <div className="hidden lg:flex items-center space-x-6">
+            <div className="hidden lg:flex items-center gap-4 xl:gap-6 shrink-0">
               {/* Broadcast Live Status Indicator */}
-              <div className="hidden xl:flex items-center gap-2 px-3 py-1 rounded bg-zinc-900/80 border border-zinc-800/90 text-[10px] font-mono tracking-wider text-zinc-400">
+              <div className="hidden xl:flex items-center gap-2 px-3 py-1 rounded bg-zinc-900/80 border border-zinc-800/90 text-[10px] font-mono tracking-wider text-zinc-400 shrink-0">
                 <span className="w-1.5 h-1.5 rounded-full bg-[#0066FF] tally-live-pulse" />
                 <span>UK BASE · GLOBAL DISPATCH</span>
               </div>
@@ -80,7 +80,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onPlanProductionClick }) => {
             </div>
 
             {/* Mobile Menu Toggle Button */}
-            <div className="flex md:hidden items-center gap-3">
+            <div className="flex lg:hidden items-center gap-3">
               <button
                 onClick={onPlanProductionClick}
                 className="px-3 py-1.5 bg-[#0066FF] text-white text-[10px] font-mono font-bold tracking-wider uppercase rounded"

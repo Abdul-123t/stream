@@ -17,7 +17,7 @@ export const Introduction: React.FC = () => {
               <span>D1 STREAMS EDITORIAL</span>
             </div>
 
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl font-black font-display uppercase tracking-tight text-[#111216] leading-[0.95]">
+            <h2 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-black font-display uppercase tracking-tight text-[#111216] leading-[0.95] break-words hyphens-auto">
               YOUR EVENT.<br />
               <span className="text-[#2563EB]">OUR BROADCAST.</span>
             </h2>
