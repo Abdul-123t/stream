@@ -9,7 +9,7 @@ export const CAPABILITIES: CapabilityItem[] = [
     specs: ['4K / 1080p60 Uncompressed Capture', 'NDI & 12G-SDI Signal Infrastructure', 'Wireless Teradek Zero-Delay Transmission', 'Symphonic Zoom & Prime Lenses'],
     equipment: ['Sony Cinema Line Cameras', 'Blackmagic Broadcast Systems', 'Canon Broadcast Lenses', 'DJI Ronin Stabilizers'],
     icon: 'Video',
-    image: 'https://images.unsplash.com/photo-1594909122845-11baa439b7bf?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/capabilities/cap_multicam_1788750260479.png',
   },
   {
     id: 'live-switching',
@@ -19,7 +19,7 @@ export const CAPABILITIES: CapabilityItem[] = [
     specs: ['20-Input 4K ATEM Constellation Mixers', 'Ultra-low Latency Hardware Switching', 'Hardware Instant Replay Systems', 'ISO Recording Per Input'],
     equipment: ['Blackmagic ATEM 4 M/E Constellation', 'vMix Pro 4K Systems', 'Elgato Stream Deck XL Arrays', 'Multi-Viewer Field Monitors'],
     icon: 'Sliders',
-    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/capabilities/cap_switching_1788750274165.png',
   },
   {
     id: 'broadcast-audio',
@@ -29,7 +29,7 @@ export const CAPABILITIES: CapabilityItem[] = [
     specs: ['Dante & MADI Digital Audio Protocols', 'EBU R128 Loudness Compliance (-14 LUFS)', 'Automixed Keynote Wireless Mics', 'Multitrack Raw Audio Recording'],
     equipment: ['Allen & Heath SQ-6 Digital Mixers', 'Shure Axient Digital Wireless Systems', 'Neumann & Sennheiser Microphones', 'Waves Live Audio Processing'],
     icon: 'Volume2',
-    image: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/capabilities/cap_audio_1788750286352.png',
   },
   {
     id: 'graphics-overlays',
@@ -39,7 +39,7 @@ export const CAPABILITIES: CapabilityItem[] = [
     specs: ['Alpha Channel Transparent Video Motion', 'Dynamic Data-Driven Speaker Labels', 'Real-Time Audience Polling Overlays', 'Custom Stinger Transitions'],
     equipment: ['vMix Graphic Engines', 'Singular.live Cloud Graphics', 'Adobe After Effects Render Rigs', 'Custom HTML5 Data Overlays'],
     icon: 'Layers',
-    image: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/capabilities/cap_graphics_1788750299025.png',
   },
   {
     id: 'multi-platform',
@@ -49,7 +49,7 @@ export const CAPABILITIES: CapabilityItem[] = [
     specs: ['Bonded 5G / Starlink Satellite Connectivity', 'SRT & Custom Secure RTMP / RTMPS', 'Concurrent 10+ Destination Distribution', 'Failover Redundant Signal Paths'],
     equipment: ['LiveU Live Streaming Encoders', 'Peplink SpeedFusion SD-WAN', 'Resi High-Reliability Encoders', 'Teradek Prism Flex 4K'],
     icon: 'Globe',
-    image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/capabilities/cap_streaming_1788750336336.png',
   },
   {
     id: 'onsite-production',
@@ -59,7 +59,7 @@ export const CAPABILITIES: CapabilityItem[] = [
     specs: ['Dedicated Technical Director & Crew', 'Clear-Com Wireless Intercom Matrix', 'Full Redundancy Power & UPS Backups', 'Comprehensive Site Safety Protocol'],
     equipment: ['Hollyland Mars T1000 Intercoms', 'APC Smart-UPS Pro Backup Power', 'Modular Flightcase Racks', 'Broadcast Monitoring Station'],
     icon: 'Users',
-    image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1200&auto=format&fit=crop',
+    image: '/images/capabilities/cap_onsite_1788750349403.png',
   },
   {
     id: 'led-hybrid',
