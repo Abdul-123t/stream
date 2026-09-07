@@ -7,7 +7,7 @@ export const ProductionProcess: React.FC = () => {
 
   return (
     <section id="process" className="py-24 lg:py-32 bg-[#ECEBE6] text-[#111216] relative border-b border-zinc-300 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="site-container relative z-10">
         
         {/* Section Header */}
         <div className="mb-16">

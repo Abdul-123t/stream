@@ -13,7 +13,7 @@ export const TrustStrip: React.FC = () => {
 
   return (
     <section className="bg-zinc-950 border-y border-zinc-800/80 py-6 relative z-20 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="site-container">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-4 divide-y sm:divide-y-0 sm:divide-x divide-zinc-800/80">
           {specs.map((spec, index) => {
             const Icon = spec.icon;

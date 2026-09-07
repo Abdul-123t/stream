@@ -40,7 +40,7 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ onPlanProductionClic
         <div className="absolute inset-0 bg-grid-pattern opacity-10" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="site-container relative z-10">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">

@@ -39,7 +39,7 @@ export const ProductionInAction: React.FC = () => {
 
   return (
     <section className="py-24 lg:py-32 bg-[#0A0A0B] relative border-b border-zinc-800/80">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="site-container">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
@@ -71,13 +71,13 @@ export const ProductionInAction: React.FC = () => {
                 alt={img.title}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
+              <div className="site-container relative z-10 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity" />
 
-              <div className="absolute top-3 left-3 bg-black/80 backdrop-blur px-2.5 py-1 rounded text-[10px] font-mono text-[#0066FF] font-bold uppercase tracking-wider border border-zinc-800">
+              <div className="site-container absolute top-3 left-3 bg-black/80 backdrop-blur px-2.5 py-1 rounded text-[10px] font-mono text-[#0066FF] font-bold uppercase tracking-wider border border-zinc-800">
                 {img.category}
               </div>
 
-              <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between">
+              <div className="site-container relative z-10 bottom-4 left-4 right-4 flex items-end justify-between">
                 <div>
                   <p className="text-xs font-mono text-zinc-400 uppercase">
                     ENVIRONMENT 0{idx + 1}

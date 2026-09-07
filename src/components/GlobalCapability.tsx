@@ -47,7 +47,7 @@ export const GlobalCapability: React.FC = () => {
         <div className="absolute inset-0 bg-dot-pattern opacity-15" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="site-container relative z-10">
         
         {/* Header */}
         <div className="max-w-3xl mb-16 space-y-4">

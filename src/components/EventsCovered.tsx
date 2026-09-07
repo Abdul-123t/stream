@@ -14,7 +14,7 @@ export const EventsCovered: React.FC<EventsCoveredProps> = ({ onPlanProductionCl
 
   return (
     <section id="events" className="py-24 lg:py-32 bg-[#0D0D0E] relative border-b border-zinc-800/80">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="site-container">
         
         {/* Section Header */}
         <div className="mb-14 flex flex-col md:flex-row md:items-end justify-between gap-6">

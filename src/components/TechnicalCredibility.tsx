@@ -18,7 +18,7 @@ export const TechnicalCredibility: React.FC = () => {
 
   return (
     <section className="py-24 lg:py-32 bg-[#0D0D0E] relative border-b border-zinc-800/80">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="site-container">
         
         {/* Header */}
         <div className="mb-16">

@@ -23,7 +23,7 @@ export const Hero: React.FC<HeroProps> = ({ onPlanProductionClick }) => {
         <div className="absolute inset-0 bg-grid-pattern opacity-15" />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full my-auto">
+      <div className="site-container relative z-10 w-full my-auto">
         <div className="max-w-5xl flex flex-col items-start space-y-8 lg:space-y-10 py-10 lg:py-20">
             
             {/* Eyebrow badge */}

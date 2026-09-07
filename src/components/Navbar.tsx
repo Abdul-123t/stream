@@ -10,6 +10,7 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ onPlanProductionClick }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const prefersReducedMotion = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // Scroll state for header background
   useEffect(() => {
@@ -41,14 +42,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onPlanProductionClick }) => {
 
   return (
     <>
-      <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? 'bg-[#0A0A0B]/90 backdrop-blur-md border-b border-zinc-800/80 py-3.5 shadow-2xl'
-            : 'bg-gradient-to-b from-black/80 via-black/40 to-transparent py-5'
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 min-h-[44px] flex items-center px-4 ${isScrolled ? 'bg-[#0A0A0B]/90 backdrop-blur-md border-b border-zinc-800/80 py-3.5 shadow-2xl' : 'bg-gradient-to-b from-black/80 via-black/40 to-transparent py-5'}`}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href="#" className="group focus:outline-none focus:ring-1 focus:ring-[#0066FF]">
@@ -56,7 +51,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onPlanProductionClick }) => {
             </a>
 
             {/* Desktop Navigation Links */}
-            <nav className="hidden md:flex items-center gap-4 lg:gap-5 xl:gap-8 shrink-0">
+            <nav className="hidden lg:flex items-center gap-4 lg:gap-5 xl:gap-8 shrink-0">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -81,17 +76,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onPlanProductionClick }) => {
             </div>
 
             {/* Mobile Menu Toggle Button */}
-            <div className="flex md:hidden items-center gap-3 shrink-0">
-              <button
-                onClick={onPlanProductionClick}
-                className="px-3 py-1.5 bg-[#0066FF] text-white text-[10px] font-mono font-bold tracking-wider uppercase rounded"
-              >
-                PLAN
-              </button>
+            <div className="flex lg:hidden items-center gap-3 shrink-0">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className="p-2 text-zinc-300 hover:text-white focus:outline-none"
                 aria-label="Toggle menu"
+                aria-expanded={mobileMenuOpen}
+                aria-controls="mobile-drawer"
               >
                 {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
               </button>
@@ -103,12 +94,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onPlanProductionClick }) => {
       {/* Mobile Drawer */}
       <AnimatePresence>
         {mobileMenuOpen && (
-          <motion.div
+          <motion.div id="mobile-drawer"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 bg-[#0A0A0B] pt-24 px-6 pb-8 flex flex-col justify-between border-b border-zinc-800 md:hidden"
+            transition={{ duration: prefersReducedMotion ? 0 : 0.2 }}
+            className="fixed inset-0 z-40 bg-[#0A0A0B] pt-24 px-6 pb-8 flex flex-col justify-between border-b border-zinc-800 overflow-y-auto md:hidden"
           >
             <div className="space-y-6">
               <div className="flex items-center gap-2 px-3 py-1.5 bg-zinc-900 border border-zinc-800 text-[11px] font-mono text-zinc-300 w-fit">

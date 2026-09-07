@@ -7,7 +7,7 @@ export const Introduction: React.FC = () => {
       {/* Subtle paper / editorial texture overlay */}
       <div className="absolute inset-0 pointer-events-none opacity-40 bg-grid-pattern mix-blend-multiply" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="site-container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           
           {/* Left Column: Eyebrow & Big Statement */}

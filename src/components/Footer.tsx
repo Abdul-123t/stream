@@ -5,7 +5,7 @@ import { Phone, Mail } from "lucide-react";
 export const Footer: React.FC = () => {
   return (
     <footer className="bg-[#070708] border-t border-zinc-800/80 pt-16 pb-12 text-zinc-400 font-mono text-xs">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="site-container">
 
         {/* Main Footer Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-zinc-800/80">
