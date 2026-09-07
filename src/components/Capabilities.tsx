@@ -108,8 +108,8 @@ export const Capabilities: React.FC<CapabilitiesProps> = ({ onPlanProductionClic
                   {/* Image Preview with Broadcast Overlay */}
                   <div className="relative aspect-video rounded overflow-hidden mb-6 border border-zinc-800">
                     <img
-                      src={activeCapability.image}
-                      alt={activeCapability.title}
+                      src="https://images.unsplash.com/photo-1594909122845-11baa439b7bf?q=80&w=1200&auto=format&fit=crop"
+                      alt="Broadcast Production Capability"
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent" />
