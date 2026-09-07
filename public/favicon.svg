@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" rx="28" fill="#0A0A0B"/>
+  <rect width="116" height="116" x="2" y="2" rx="26" fill="none" stroke="#27272A" stroke-width="2"/>
+  <g transform="translate(5, 15)">
+    <defs>
+      <linearGradient id="silverDGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#CBD5E1" />
+        <stop offset="50%" stop-color="#94A3B8" />
+        <stop offset="100%" stop-color="#475569" />
+      </linearGradient>
+
+      <linearGradient id="blue1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#00A3FF" />
+        <stop offset="60%" stop-color="#0066FF" />
+        <stop offset="100%" stop-color="#0040C8" />
+      </linearGradient>
+
+      <linearGradient id="cyanPulseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#00E5FF" />
+        <stop offset="100%" stop-color="#0066FF" />
+      </linearGradient>
+    </defs>
+
+    <path
+      d="M 12 18 L 38 18 C 54 18 64 27 64 45 C 64 63 54 72 38 72 L 12 72 L 20 58 L 36 58 C 45 58 50 52 50 45 C 50 38 45 32 36 32 L 20 32 Z"
+      fill="url(#silverDGrad)"
+    />
+
+    <path
+      d="M 2 45 L 24 45 L 28 32 L 32 58 L 36 38 L 40 50 L 44 45 L 68 45"
+      stroke="url(#cyanPulseGrad)"
+      stroke-width="4.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <path
+      d="M 72 82 L 86 12 L 102 8 L 86 82 Z"
+      fill="url(#blue1Grad)"
+    />
+    <path
+      d="M 68 36 L 86 12 L 102 8 Z"
+      fill="#00D4FF"
+      opacity="0.9"
+    />
+  </g>
+</svg>
